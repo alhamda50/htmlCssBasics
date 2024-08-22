@@ -1,0 +1,31 @@
+$primary: red;
+$clr: #B99470;
+$fam: cursive;
+
+
+.grp1{
+    h1{
+        color: $primary;
+    }
+    p{
+        font-family: fantasy;
+    }
+    h6{
+        background-color: $clr;
+        font-family: $fam;
+    }
+}
+
+@mixin common_style($clr){
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: $clr;
+}
+
+body{
+    .grp1{
+        h3{
+            @include common_style(#FF9100);
+        }
+    }
+}

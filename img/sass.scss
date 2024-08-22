@@ -1,0 +1,28 @@
+$pd: 20px;
+$clr: #86AB89;
+$size: 50px;
+$dec: none;
+
+
+header{
+    nav{
+        display: flex;
+        justify-content: space-around;
+        background-color: #F4DEB3;
+        padding: $pd;
+        
+    }
+    a{
+        color: black;
+        text-decoration: $dec;
+    }
+}
+
+div{
+    h1{
+        color: $clr;
+    }
+    p{
+        font-size: $size;
+    }
+}

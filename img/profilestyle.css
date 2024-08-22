@@ -1,18 +1,20 @@
 body{
-    background-image: url('https://images.unsplash.com/photo-1496865534669-25ec2a3a0fd3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
+    background: linear-gradient(to right, #DAD6D2, #EEEDEB, #F5F3F0, #FFFFFF);
+
+            background-size: cover;
+            background-repeat: no-repeat;    
 }
 
 h1{
     text-align:center; 
     font-size: 80px; 
-    color: #1B5052;
+    color: #6F4F28;
 }
 
 h3{
     text-align: center; 
     margin-top: -50px;
-     color:rgb(27, 80, 82);
+     /* color:#6F4F28; */
 }
 
 img{
@@ -24,7 +26,7 @@ img{
 
 h2{
     margin-left: 300px; 
-    color: #1B5052;
+    color: #6F4F28;
     margin-top: 50px; 
     text-decoration:underline;
 }
@@ -37,6 +39,9 @@ p{
     margin-left: 300px;
     margin-top: -8px; 
     font-family:'Times New Roman', Times, serif;
+
+
+    
 }
 
 ul{
@@ -53,7 +58,7 @@ a{
 .button{
     margin-left: 300px;
     border: none;
-    background-color: #1B5052;
+    background-color: #6F4F28;
     border-radius: 5px;
     padding: 10px;
 }
@@ -61,3 +66,82 @@ a{
 .button:hover{
     background-color: #0D7C66;
 }
+
+header{
+    background-color: #6F4F28;
+    padding: 30px;
+}
+
+.navbar{
+     
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px; 
+}
+
+.navbar a{
+    color: #fff;
+    margin-right: 20px;
+    font-size: larger ;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .button, img, h2, p, ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img{
+        margin-top: 6px;
+        margin-left: 140px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .navbar {
+        justify-content: center;
+        padding: 20px;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    
+    img{
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (min-width: 160px) and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        
+    }  
+    
+    .navbar a{
+        font-size: medium;
+    }
+
+
+    img{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+
+      h1{
+        font-size: 50px;
+      }
+      
+      h3{
+        margin-top: 1px;
+      }
+}
+

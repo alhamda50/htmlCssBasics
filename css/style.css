@@ -46,3 +46,29 @@ table td{
     padding: 10px;
 }
 
+.grp2{
+    position: relative;
+}
+
+.grp2 h1{
+    position: absolute;
+    top: 20px;
+    left: 250px;
+    color: #fff;
+}
+
+.parent{
+    border: 2px solid black;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+
+.child{
+    border: 2px solid #800000;
+  
+}
